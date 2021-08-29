@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+#divHeader{
+    height: auto;
+    overflow: hidden; 
+    float: center;
+}
+
+#divHeaderPhoto{
+    float: left;
+}
+
+#divHeaderMenu{
+    float: right;
+    position: relative;
+    right: 0x;
+    top: 50px;
+}
+
+.aHeader{
+    position: relative;
+    margin-left: 20px;
+    font-family: 'Muli', sans-serif;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: 0.5s;
+    color: red;
+}
+
+#divView {
+    width: 700px;
+    height: 350px;
+    margin: 0 auto ;
+    overflow: hidden;
+    position: relative;
+}
+
+#divView:hover{
+    transition: 0.5s;
+    opacity: 0.8;
+    cursor: pointer;
+}
+#rightArrow {
+    font-size: 3rem;
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    opacity: 0.5;
+    position: absolute;
+    right:0px;
+    top: 175px;
+    z-index: 2;
+}
+#leftArrow {
+    font-size: 3rem;
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    opacity: 0.5;
+    position: absolute;
+    left:0px;
+    top: 175px;
+    z-index: 2;
+}
+
+#divTxtImg {
+    position: absolute;
+    z-index: 50;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#pTxt {
+    color: white;
+    opacity: 1;
+    font-family: 'Quicksand', sans-serif;
+    position: "relative";
+    padding-left: 30px;
+}
+
+.rightImg {
+    position: absolute;
+    left: 1400px;
+    top: 0px;
+    float: left;
+}
+
+    
+.leftImg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    float: left;
+}
+.centerImg{
+    position: absolute;
+    left: 700px;
+    top: 0px;
+    float: left;
+}
+
+#divContainer {
+    position: absolute; 
+    width: 2100px;
+    height: 350px;
+    top: 50px;
+    left: -700px;
+}
+
+#divTxtInfo{
+    width: 700PX;
+    font-family: 'Quicksand', sans-serif;
+    margin: 10px auto ;
+    overflow: hidden;
+    position: relative;
+}
+
+#divFooter{
+    position: absolute;
+    bottom: 20px;
+    width: 700px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#divImgFooter{
+    position: relative;
+    top: 20px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#txtFooter {
+    width: auto;
+    overflow: hidden;
+    float:left;
+}
+
+.footer {
+    margin-bottom: 20px;
+    float: left;
+    margin-left: 20px;
+}
+
+#imgFooter {
+    position: relative;
+}
+
+#divRightFooter{
+    float: right;
+    margin-right: 50px;
+    color: gray;
+}
+
+.righttTxtFooter {
+    padding-bottom: 20px;
+    text-align: right;
+}
+
+#divWeb{
+    width: 700px;
+    margin: 0 auto;
+}
