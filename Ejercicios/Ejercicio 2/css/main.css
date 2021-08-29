@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+.headerDiv{
+    height: auto;
+    overflow: hidden; 
+    float: center;
+}
+
+.headerImg {
+    position: absolute;
+    top: 30 px;
+    right: 30 px    ;
+    float:left;
+}
+.header {
+    font-family: 'Muli', sans-serif;
+    float:left;
+    position: relative;
+    left: 120px;
+    padding: 20px 20px;
+}
+#divContainer {
+    position: relative;  
+    margin-top: 50px;
+    
+  }
+.texto {
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    width: 780px;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    margin-left: 0px;
+  }
+  .txt {
+    color: white;
+    opacity: 1;
+  }
+  .parrafo {
+    font-family: 'Quicksand', sans-serif;
+    position: "relative";
+}
+
+
+.footerDiv {
+    height: auto;
+    overflow: hidden;
+    width: 380px;    
+    
+    position: relative;
+    float:left;
+    display:block;
+    padding: 10px ;
+}
+.footer {
+    margin-bottom: -30px;
+    position: relative;
+    float:left;
+    padding: 10px;
+}
+
+.Derecha {
+    color: grey;
+    float:right;
+}
+.ultima {
+    margin-bottom: -40px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#imgDedos { 
+    position: relative;
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+#imgDedos:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+.header:hover {
+    transition: 0.5s;
+    color: red;
+}
+
+a { 
+    text-decoration: none; 
+}
+
+#divContainer.open {
+    transition: 5s;
+    opacity: 1;
+}
