@@ -3,20 +3,28 @@
 var mouseArriba = false;
 var i = 1;
 var noflecha = false;
+var myTime ;
+
 
 $(document).ready(function () {
+
+    $('#divContainer').addClass("open");
+
     $("#rightArrow").click(function () {
         rightClick();
         noflecha = true;
-    })
+        longerTimer();
+    });
+
     $("#leftArrow").click(function () {
         leftClick();
         noflecha = true;
-    })
-    setInterval(function () {
+        longerTimer();
+    });
+
+    myTime =setInterval(function () {
         sigImagen();
-    }, 3000
-    );
+    }, 3000);
 }
 );
 
@@ -65,12 +73,24 @@ function sigImagen() {
     $("#divContainer").mouseenter(function () {
         mouseArriba = true;
     });
+    
     $("#divContainer").mouseleave(function () {
         mouseArriba = false;
     });
-    if (!mouseArriba && !noflecha) {
+    if (!mouseArriba) {
         rightClick();
     }
 
+}
+
+function longerTimer() {
+    clearInterval(myTime);
+    myTime =setInterval(function () {
+        sigImagen();
+        clearInterval(myTime);
+        myTime =setInterval(function () {
+        sigImagen();
+        }, 3000);
+    }, 10000);
 }
 

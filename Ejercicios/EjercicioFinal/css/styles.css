@@ -114,6 +114,7 @@ a:hover {
     height: 350px;
     top: 50px;
     left: -700px;
+    opacity: 0;
 }
 
 #divTxtInfo{
@@ -168,4 +169,9 @@ a:hover {
 #divWeb{
     width: 700px;
     margin: 0 auto;
+}
+
+#divContainer.open {
+    transition: 5s;
+    opacity: 1;
 }
