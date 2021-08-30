@@ -125,7 +125,7 @@ a:hover {
 }
 
 #divFooter{
-    position: absolute;
+    position: relative;
     bottom: 20px;
     width: 700px;
     font-family: 'Quicksand', sans-serif;
