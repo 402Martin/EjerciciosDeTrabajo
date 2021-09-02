@@ -1,4 +1,12 @@
+
+<?php
+    session_start();
+    if ( isset($_SESSION['loggedUser'])) {
+         header('Location: /index.php');
+    }
+    ?>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +15,13 @@
     <script type="text/javascript" src="js/scriptPhp.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-   Ingrese su password <input type="password" name="password" id= "password"/>
-   <button type="submit" id = 'btnContinue'>Continuar</button>
+
+    
+    Ingrese su user <input type="text" name="user" id="user"  />
+    Ingrese su password <input type="password" name="password" id="password" />
+    <button type="submit" id='btnContinue'>Continuar</button>
 </body>
+
 </html>

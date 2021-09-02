@@ -27,6 +27,10 @@ $(document).ready(function () {
   $(".menu").click(function () {
     script.openMenu();
   });
+
+  $("#logout").click(function () {
+    script.killSession();
+  });
 });
 
 script.rightClick = function rightClick() {
@@ -123,4 +127,21 @@ script.createImgArray = function () {
 
 script.openMenu = function () {
   $("#divMenuInfo").toggleClass("opened");
+};
+
+script.killSession = function(){
+  $.ajax({
+    type: "POST",
+    url: "/logOut.php",
+    data: { },
+    success: function (response) {
+        var url = "/loginAjax.php";
+        $(location).attr("href", url);
+    },
+    error: function () {
+      alert(
+        "Error obteniendo datos del sitio, verifique su conexión a internet."
+      );
+    },
+  });
 };
