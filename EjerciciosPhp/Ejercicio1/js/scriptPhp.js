@@ -12,7 +12,7 @@ $(document).ready(function () {
       success: function (response) {
         response = $.parseJSON(response);
         alert(response.message);
-        if (response.message == "bien") {
+        if (response.message == "ok") {
           var url = "/index.php";
           $(location).attr("href", url);
         }
