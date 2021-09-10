@@ -35,7 +35,7 @@ class Users
     {
         $mysqli = Users::getDbConnection();
         $stmt = $mysqli->stmt_init();
-        $$stmt = $mysqli->prepare("DELETE FROM users WHERE id = ?");
+        $$stmt = $mysqli->prepare("DELETE FROM users WHERE ID = 38");
         $stmt->bind_param("i", $id);
         $stmt->execute();
         $stmt->close();
@@ -48,13 +48,6 @@ class Users
         $stmt = $mysqli->prepare("SELECT * FROM users ");
         $stmt->execute();
         $result = $stmt->get_result();
-        if ($result->num_rows > 0) {
-            while ($row = $result->fetch_assoc()) {
-               echo "ID ". $row['ID'].  " Nombre ". $row['Name'] . " Mail ". $row['Mail'] . 
-               " Phone ". $row['Phone'] . " Password " . $row['Password'] ."<br>";
-            }
-        } else {
-            echo "0 results";
-        }
+        return $result;
     }
 }
